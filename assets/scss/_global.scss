@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: CamphorPro, sans-serif;
+  box-sizing: border-box;
+}
+
+img,
+video {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+h2 {
+  color: #a9a9a9;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.042em;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #5b5b5b;
+  font-size: 30px;
+  line-height: 2.2;
+  letter-spacing: -0.042em;
+
+  strong,
+  span {
+    color: black;
+  }
+
+  span {
+    font-weight: 300;
+  }
+}
