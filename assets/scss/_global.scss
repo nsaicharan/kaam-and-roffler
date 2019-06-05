@@ -7,12 +7,17 @@
 body {
   font-family: CamphorPro, sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 img,
 video {
   max-width: 100%;
   vertical-align: middle;
+}
+
+ul {
+  list-style: none;
 }
 
 h2 {
@@ -25,8 +30,6 @@ h2 {
 
 h3 {
   color: #5b5b5b;
-  font-size: 30px;
-  line-height: 2.2;
   letter-spacing: -0.042em;
 
   strong,

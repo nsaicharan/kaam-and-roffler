@@ -1,0 +1,61 @@
+.section-clients {
+  padding: 8vh 15% 230px;
+
+  @media (min-width: 800px) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  h2 {
+    margin-bottom: 105px;
+  }
+
+  .clients-container {
+    margin-bottom: 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .client-item {
+    display: inline-block;
+    width: 33.33%;
+    margin-top: 6%;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: auto;
+      max-height: 100px;
+      max-width: 160px;
+
+      &.smaller {
+        height: 20px;
+      }
+
+      &.small {
+        height: 70px;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .client-item {
+      width: 50%;
+      margin-top: 15%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .client-item img {
+      max-width: 90px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .client-item img {
+      max-width: 70px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.footer {
+  position: relative;
+  padding: 90px 15px 246px;
+  background: #111;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 970px;
+    margin: 0 auto;
+  }
+
+  &__title,
+  &__content {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.044em;
+    line-height: 1.4;
+  }
+
+  &__title {
+    color: white;
+    margin-bottom: 18px;
+  }
+
+  &__content {
+    color: #818181;
+    text-decoration: none;
+  }
+
+  &__logo {
+    position: absolute;
+    bottom: 105px;
+    right: 11.4%;
+  }
+}

@@ -20,7 +20,7 @@ function css() {
 gulp.task("watch", () => {
   css();
 
-  connect.server({}, () => {
+  connect.server({}, function() {
     browserSync({ proxy: "127.0.0.1:8000" });
   });
 

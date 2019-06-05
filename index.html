@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header" data-section="header">
     <div class="background-line">
       <div class="line line-1"></div>
       <div class="line line-2"></div>
@@ -17,7 +17,7 @@
       <div class="line line-5"></div>
     </div>
 
-    <a href="#" class="header__logo">
+    <a href="#" class="site-logo">
       <img src="assets/img/logo.png" alt="Logo of Kaam and Roffler.">
     </a>
 
@@ -29,9 +29,25 @@
       </h1>
     </div>
 
-    <nav class="header__nav">
+    <nav class="menu menu--main" id="mainMenu">
       <ul>
-        <li><a href="#" class="active">What we do</a></li>
+        <li><a data-scroll href="#what">What we do</a></li>
+        <li><a data-scroll href="#who">Who we are</a></li>
+        <li><a data-scroll href="#projects">Our projects</a></li>
+        <li><a data-scroll href="#clients">Our clients</a></li>
+        <a><a data-scroll href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <div id="burger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="menu menu--mobile">
+      <ul>
+        <li><a href="#">What we do</a></li>
         <li><a href="#">Who we are</a></li>
         <li><a href="#">Our projects</a></li>
         <li><a href="#">Our clients</a></li>
@@ -42,7 +58,7 @@
 
 
   <!-- ====== WHAT WE DO ====== -->
-  <section class="section-what bg-white">
+  <section class="section-what bg-white" id="what" data-section="what">
     <div class="background-line">
       <div class="line line-1"></div>
       <div class="line line-2"></div>
@@ -60,7 +76,7 @@
         <span>(Demandware)</span>. Nous concevons également des stratégie de marketing digitale à fort ROI.
       </h3>
 
-      <a href="#" class="see-details-link">
+      <a class="see-details-link" href="#clients" data-scroll>
         voir nos références
         <img src="assets/img/right-arrow.png" alt="" aria-hidden="true">
       </a>
@@ -76,7 +92,9 @@
           >
           </video>
 
-          <a href="#" class="see-details-link">
+          <img src="assets/img/line-vertical.png" class="line-top-img" alt="" aria-hidden="true">
+
+          <a class="see-details-link" href="#projects" data-scroll>
             voir nos projets
             <img src="assets/img/right-arrow.png" alt="" aria-hidden="true">
           </a>
@@ -94,7 +112,256 @@
   </section>
 
 
-  <!-- ====== WHAT WE ARE ====== -->
-  <section></section>
+  <!-- ====== WHO WE ARE ====== -->
+  <section class="section-who bg-white" id="who" data-section="who">
+    <h2>WHO ARE WE</h2>
+
+    <div class="hashtags-wrapper">
+      <h3>KnR est une entreprise à taille humaine composée de
+        digitals natives organisés en mode agile afin de répondre au mieux aux exigences du monde de la mode et du luxe.</h3>
+    </div>
+
+    <div class="persons-wrapper">
+      <div class="background-line">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <div class="line line-4"></div>
+        <div class="line line-5"></div>
+      </div>
+
+      <div class="person person--left">
+        <div class="person__top-block">
+          <div class="person__name-title">
+            <h5 class="person__name">Gabriel Kaam</h5>
+            <h6 class="person__title">CEO</h6>
+            <img class="line-img" src="assets/img/line-small.svg" alt="" aria-hidden="true">
+          </div>
+
+          <div class="person__pic"> 
+            <img src="assets/img/gabriel.jpg" alt="Gabriel Kaam">
+          </div>
+        </div>
+        <!-- ./person__top-block -->
+
+        <div class="person__bottom-block">
+          <p>Fondateur de l’agence KnR, il intègre en 2013 l’équipe e-commerce chez <strong>The Kooples</strong>. Il rejoint la SSII <strong>Octo Technology</strong> en tant que Consultant IT et se forme aux <strong>méthodes agiles</strong>. Il sera formé au développement sur <strong>Salesforce Commerce Cloud</strong> par <strong>Itelios</strong>.</p>
+        </div>
+      </div>
+      <!-- ./person -->
+
+      <div class="person person--right">
+        <div class="person__top-block">
+          <div class="person__pic">
+            <img src="assets/img/antoine.jpg" alt="Antoine Roffler">
+            <img class="line-img" src="assets/img/line-vertical-small.svg" alt="">
+          </div>
+
+          <div class="person__name-title">
+            <h5 class="person__name">Antoine Roffler</h5>
+            <h6 class="person__title">CCO</h6>
+          </div>
+        </div>
+        <!-- ./person__top-block -->
+
+        <div class="person__bottom-block">
+          <p>Après avoir fondé une startup spécialisée mode et shopping en ligne, il s’associe avec Gabriel pour créé l’agence Kaam and Roffler. CCO de l’agence il accompagne les marques dans la réfléxion et l’optimisation UX de leur site e-commerce.</p>
+        </div>
+      </div>
+      <!-- ./person -->
+    </div>
+    <!-- ./persons-wrapper -->
+  </section>
+
+
+  <!-- ====== OUR PROJECTS ====== -->
+  <section class="section-projects" id="projects" data-section="projects">
+    <div class="background-line">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+      <div class="line line-4"></div>
+      <div class="line line-5"></div>
+    </div>
+
+    <h2 class="text-center">Our Projects</h2>
+
+    <div class="project project-1">
+      <div class="project-text-top">
+        <h4 class="project-title">Maje</h4>
+        <ul class="project-areas">
+          <li>salesforce</li>
+          <li>landing pages</li>
+          <li>newsletter</li>
+        </ul>
+      </div>
+
+      <video src="assets/videos/Maje_x_Kaam_and_Roffler-Day_To_Evening-Homepage.mp4" autoplay muted loop playinline></video>
+
+      <p class="project-text-bottom">
+        Lorem ipsum dolores Lorem ipsum dolores Lorem ipsum dolores Lorem ipsum dolores Lorem ipsum dolores Lorem ipsum dolores.
+      </p>
+    </div>
+    <!-- ./project--1 -->
+
+    <div class="project project-2">
+      <div class="project-text-top">
+        <h4 class="project-title">MinelliI</h4>
+        <ul class="project-areas">
+          <li>salesforce</li>
+          <li>homepage</li>
+          <li>newsletter</li>
+        </ul>
+      </div>
+    
+      <video src="assets/videos/Minelli_x_Kaam_and_Roffler-Boutique_de_Noel.mp4" autoplay muted loop playinline></video>
+    
+      <p class="project-text-bottom">
+        Lorem ipsum dolores Lorem ipsum dolores Lorem ipsum dolores Lorem ipsum dolores Lorem ipsum dolores Lorem ipsum
+        dolores.
+      </p>
+    </div>
+    <!-- ./project--2 -->
+
+    <div class="project project-3">
+      <div class="project-text-top">
+        <h4 class="project-title">The Kooples</h4>
+        <ul class="project-areas">
+          <li>magento</li>
+          <li>développement back-end</li>
+          <li>newsletter</li>
+        </ul>
+      </div>
+    
+      <img src="assets/img/the_kooples.jpg" alt="The Kooples - Kaam and Roffler">
+    
+      <p class="project-text-bottom">
+        Lorem ipsum dolores Lorem ipsum dolores Lorem ipsum dolores Lorem ipsum dolores Lorem ipsum dolores Lorem ipsum
+        dolores.
+      </p>
+    </div>
+    <!-- ./project--3 -->
+  </section>
+
+
+  <!-- ====== OUR CLIENTS ====== -->
+  <section class="section-clients bg-white" id="clients" data-section="clients">
+    <h2 class="text-center">nos clients</h2>
+
+    <div class="clients-container">
+      <div class="client-item">
+        <div class="img-client_container">
+          <img src="assets/img/clients/lvmh.jpg"  alt="LVMH | Kaam and Roffler">
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="img-client_container">
+          <img src="assets/img/clients/maje.svg" alt="Maje | Kaam and Roffler">
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="img-client_container">
+          <img src="assets/img/clients/sandro.svg" alt="Sandro | Kaam and Roffler">
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="img-client_container">
+          <img src="assets/img/clients/minelli.png" alt="Minelli | Kaam and Roffler">
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="img-client_container">
+          <img src="assets/img/clients/the-kooples.svg" alt="The Kooples | Kaam and Roffler">
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="img-client_container">
+          <img src="assets/img/clients/shopsquare.png" alt="Shopsquare | Kaam and Roffler">
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="img-client_container">
+          <img src="assets/img/clients/claudie.png" alt="Claudie Pierlot | Kaam and Roffler">
+        </div>
+      </div>
+    </div>
+    <!-- ./clients-container -->
+  </section>
+
+
+  <!-- ====== WHY WE DO IT ====== -->
+  <section class="section-why bg-white">
+    <div class="section-why__top-block">
+      <h2>WHY WE DO IT</h2>
+      
+      <h3>KnR c’est la passion convergente de la mode, du luxe et du digital.</h3>
+      
+      <p>Le digital est bien plus qu’un outil, c’est un levier qui permet aux marques de propulser sans commune mesure leur
+        chiffre d’affaire; c’est donc une force concrète qui s’inscrit dans la stratégie globale des marques en désir de
+        croissance.</p>
+      <p>En tant qu’experts du digital, nous accompagnons nos clients pour les aider à développer les ventes générées par leur
+        site e-commerce.</p>
+    </div>
+    <!-- ./section-why__top-block -->
+
+    <div class="section-why__bottom-block">
+      <div class="background-line">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <div class="line line-4"></div>
+        <div class="line line-5"></div>
+      </div>
+
+      <h4>Parlons de votre site e-commerce.</h4>
+
+      <a href="#" class="cta">Contactez-nous</a>
+    </div>
+    <!-- ./section-why__bottom-block -->
+  </section>
+
+
+  <footer class="footer" id="contact" data-section="contact">
+    <div class="footer__inner">
+      <div>
+        <h6 class="footer__title">RENDEZ-NOUS VISITE</h6>
+        <p class="footer__content">
+          32, Quai Louis Blériot <br>
+          75016 - Paris
+        </p>
+      </div>
+      
+      <div>
+        <h6 class="footer__title">SUIVEZ-NOUS</h6>
+        <ul>
+          <li><a class="footer__content" href="#">Linkedin</a></li>
+          <li><a class="footer__content" href="#">Instagram</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h6 class="footer__title">CONTACTEZ-NOUS</h6>
+        <ul>
+          <li><a class="footer__content" href="tel:+33186919996">+33 (0) 1 86 91 99 96</a></li>
+          <li><a class="footer__content" href="mailto:hello@knr.paris">hello@knr.paris</a></li>
+        </ul>
+      </div>
+
+      <img class="footer__logo" src="assets/img/logo.png" alt="Logo of Kaam and Roffler">
+    </div>
+    <!-- ./footer__inner -->
+  </footer>
+
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/smooth-scroll.min.js"></script>
+  <script src="assets/js/appear.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
