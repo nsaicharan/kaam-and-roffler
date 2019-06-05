@@ -12,6 +12,12 @@ $(document).ready(() => {
     $(this).addClass("active");
   });
 
+  $("#mobileMenu a").click(() => {
+    setTimeout(() => {
+      $("body").removeClass("burger-is-active");
+    }, 300);
+  });
+
   smoothScroll.init();
 
   appear({

@@ -1,96 +1,238 @@
 .section-projects {
   position: relative;
   background: #111;
-  padding: 65px 0 120px;
+  padding: 65px 0 12px;
+  overflow-x: hidden;
 
   h2 {
-    margin-bottom: 75px;
+    margin-bottom: 60px;
   }
 
   .project {
     position: relative;
-    width: 66.6%;
-    margin-bottom: 240px;
+    margin-bottom: 50px;
     color: white;
   }
 
   .project-text-top {
-    position: absolute;
+    margin-bottom: 25px;
     text-align: center;
-    top: 21.2%;
-    right: -205px;
-    // mix-blend-mode: difference;
     z-index: 1;
+    // mix-blend-mode: difference;
   }
 
   .project-title {
     margin-bottom: 4px;
     font-weight: 800;
-    font-size: 96px;
+    font-size: 35px;
     letter-spacing: 0.021em;
     text-transform: uppercase;
   }
 
   .project-areas {
     display: flex;
+    justify-content: center;
     font-weight: 700;
     color: #fff6dd;
-    font-size: 21.67px;
+    font-size: 15px;
     letter-spacing: 0.021em;
 
     li {
-      margin: 0 18px;
+      margin: 0 9px;
     }
   }
 
   .project-text-bottom {
-    position: absolute;
-    right: -352px;
-    bottom: -107px;
-    max-width: 600px;
-    padding: 68px 65px 128px;
+    max-width: 400px;
+    padding: 20px 15px 30px;
     background: #111;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 1.6;
     letter-spacing: 0.044em;
-  }
-
-  .project-2 {
-    margin-left: auto;
-
-    .project-text-top {
-      text-align: left;
-      top: 21.2%;
-      left: -316px;
-    }
-
-    .project-title {
-      padding-left: 138px;
-    }
-
-    .project-text-bottom {
-      max-width: 615px;
-      left: -379px;
-      padding: 68px 73px 128px;
-    }
   }
 
   .project-3 {
     img {
       filter: brightness(75%);
     }
+  }
+
+  @media (min-width: 768px) {
+    padding: 65px 0 0; // .section-projects
+
+    h2 {
+      margin-bottom: 75px;
+    }
+
+    .project {
+      width: 66.6%;
+      margin-bottom: 200px;
+    }
 
     .project-text-top {
-      right: -359px;
+      position: absolute;
+      top: 17%;
+      right: -185px;
+      margin-bottom: 0;
     }
 
     .project-title {
-      padding-left: 70px;
+      font-size: 48px;
+    }
+
+    .project-areas {
+      justify-content: initial;
     }
 
     .project-text-bottom {
-      right: -385px;
+      position: absolute;
+      right: -280px;
+      bottom: -107px;
+      max-width: 400px;
+      padding: 20px 20px 95px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .project-2 {
+      margin-left: auto;
+
+      .project-text-top {
+        text-align: left;
+        top: 21.2%;
+        left: -245px;
+      }
+
+      .project-title {
+        padding-left: 80px;
+      }
+
+      .project-text-bottom {
+        left: -255px;
+        padding: 20px 20px 95px;
+      }
+    }
+
+    .project-3 {
+      .project-text-top {
+        right: -220px;
+      }
+
+      .project-title {
+        padding-left: 40px;
+      }
+
+      .project-text-bottom {
+        right: -255px;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding: 65px 0 120px; // .section-projects
+
+    .project {
+      margin-bottom: 240px;
+    }
+
+    .project-text-top {
+      right: -205px;
+    }
+
+    .project-title {
+      font-size: 60px;
+    }
+
+    .project-areas {
+      font-size: 18px;
+
+      li {
+        margin: 0 15px;
+      }
+    }
+
+    .project-text-bottom {
+      right: -352px;
+      bottom: -107px;
+      max-width: 500px;
+      padding: 35px 35px 128px;
+
+      font-size: 17px;
+    }
+
+    .project-2 {
+      .project-text-top {
+        left: -316px;
+      }
+
+      .project-title {
+        padding-left: 138px;
+      }
+
+      .project-text-bottom {
+        left: -335px;
+        padding: 35px 35px 128px;
+      }
+    }
+
+    .project-3 {
+      .project-text-top {
+        right: -280px;
+      }
+
+      .project-title {
+        padding-left: 70px;
+      }
+
+      .project-text-bottom {
+        right: -320px;
+      }
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .project-text-top {
+      top: 21.2%;
+    }
+
+    .project-title {
+      margin-bottom: 4px;
+      font-size: 96px;
+    }
+
+    .project-areas {
+      font-size: 21.67px;
+
+      li {
+        margin: 0 18px;
+      }
+    }
+
+    .project-text-bottom {
+      right: -352px;
+      bottom: -107px;
+      max-width: 600px;
+      padding: 68px 65px 128px;
+      font-size: 20px;
+    }
+
+    .project-2 {
+      .project-text-bottom {
+        max-width: 615px;
+        left: -379px;
+        padding: 68px 73px 128px;
+      }
+    }
+
+    .project-3 {
+      .project-text-top {
+        right: -359px;
+      }
+
+      .project-text-bottom {
+        right: -385px;
+      }
     }
   }
 }

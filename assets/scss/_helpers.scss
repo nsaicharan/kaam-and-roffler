@@ -15,6 +15,12 @@
   background: #fff;
 }
 
+.hidden-mobile {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
 .background-line {
   position: absolute;
   width: 100%;

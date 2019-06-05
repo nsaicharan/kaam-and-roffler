@@ -1,17 +1,18 @@
 .section-what {
   position: relative;
-  padding: 120px 0 100px;
+  padding: 60px 0 50px;
 
   &__intro {
     max-width: 780px;
-    margin-left: 12%;
-    margin-bottom: 205px;
+    margin-bottom: 80px;
+    padding: 0 15px;
   }
 
   h2 {
-    margin-bottom: 30px;
-    padding-left: 13.4%;
     position: relative;
+    margin-bottom: 30px;
+    padding-left: 35%;
+    font-size: 15px;
 
     &::before {
       content: url("../img/line.png");
@@ -22,14 +23,14 @@
   }
 
   h3 {
-    font-size: 25px;
+    font-size: 18px;
     line-height: 2.2;
   }
 
   .see-details-link {
     display: inline-block;
     margin-top: 16px;
-    margin-left: 34.5%;
+    margin-left: 24%;
     color: #a9a9a9;
     font-size: 18px;
     font-weight: 800;
@@ -43,15 +44,17 @@
 
   &__row {
     display: flex;
+    flex-wrap: wrap;
   }
 
-  &__col-left {
-    width: 53%;
+  &__col-right {
+    width: 100%;
   }
 
   &__video-wrapper {
     position: relative;
-    padding-left: 16.5%;
+    padding-left: 3.5%;
+    margin-bottom: 75px;
 
     // Grey element
     &::before {
@@ -60,8 +63,8 @@
       position: absolute;
       width: 62.7%;
       left: 0;
-      top: -40px;
-      bottom: -45px;
+      top: -18px;
+      bottom: -20px;
     }
 
     video {
@@ -70,19 +73,18 @@
 
     .line-top-img {
       position: absolute;
-      top: -66px;
+      top: -115px;
       left: 31.25%;
     }
 
     a {
       position: absolute;
-      right: 0;
-      bottom: -45px;
+      right: 18px;
+      bottom: -50px;
     }
   }
 
   &__col-right {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,22 +96,74 @@
   }
 
   @media (min-width: 768px) {
+    padding: 120px 0 100px;
+
     &__intro {
       max-width: 680px;
       margin-left: 7.5%;
+      margin-bottom: 205px;
+      padding: 0;
+    }
+
+    h2 {
+      padding-left: 13.4%;
+      font-size: 25px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    .see-details-link {
+      margin-left: 34.5%;
+    }
+
+    &__col-left {
+      width: 53%;
+    }
+
+    &__video-wrapper {
+      padding-left: 5%;
+
+      // Grey element
+      &::before {
+        top: -40px;
+        bottom: -45px;
+      }
+
+      a {
+        right: 0;
+        bottom: -45px;
+      }
     }
 
     &__col-right {
+      flex: 1;
+
       h3 {
         font-size: 20px;
+      }
+
+      a {
+        right: 0;
+        bottom: -45px;
       }
     }
   }
 
   @media (min-width: 1024px) {
     &__intro {
-      // max-width: 780px;
       margin-left: 18%;
+    }
+
+    .line-top-img {
+      top: -66px;
+    }
+
+    &__col-right {
+      h3 {
+        font-size: 25px;
+      }
     }
   }
 
@@ -121,6 +175,10 @@
 
     h3 {
       font-size: 30px;
+    }
+
+    &__video-wrapper {
+      padding-left: 16.5%;
     }
   }
 }

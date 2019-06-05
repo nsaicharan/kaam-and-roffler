@@ -45,13 +45,13 @@
       <span></span>
     </div>
 
-    <nav class="menu menu--mobile">
+    <nav class="menu menu--mobile" id="mobileMenu">
       <ul>
-        <li><a href="#">What we do</a></li>
-        <li><a href="#">Who we are</a></li>
-        <li><a href="#">Our projects</a></li>
-        <li><a href="#">Our clients</a></li>
-        <a><a href="#">Contact us</a></li>
+        <li><a data-scroll href="#what">What we do</a></li>
+        <li><a data-scroll href="#who">Who we are</a></li>
+        <li><a data-scroll href="#projects">Our projects</a></li>
+        <li><a data-scroll href="#clients">Our clients</a></li>
+        <a><a data-scroll href="#contact">Contact us</a></li>
       </ul>
     </nav>
   </header>
@@ -71,7 +71,7 @@
       <h2>What we do</h2>
 
       <h3>
-        Kaam and Roffler est l’agence digitale de référence <br>
+        Kaam and Roffler est l’agence digitale de référence <br class="hidden-mobile">
         pour l’intégration de <strong>Landing Pages</strong> sur <strong>Salesforce Commerce Cloud</strong>
         <span>(Demandware)</span>. Nous concevons également des stratégie de marketing digitale à fort ROI.
       </h3>
@@ -92,7 +92,7 @@
           >
           </video>
 
-          <img src="assets/img/line-vertical.png" class="line-top-img" alt="" aria-hidden="true">
+          <img src="assets/img/line-vertical.png" class="line-top-img hidden-mobile" alt="" aria-hidden="true">
 
           <a class="see-details-link" href="#projects" data-scroll>
             voir nos projets
@@ -133,7 +133,7 @@
       <div class="person person--left">
         <div class="person__top-block">
           <div class="person__name-title">
-            <h5 class="person__name">Gabriel Kaam</h5>
+            <h5 class="person__name">Gabriel&nbsp;Kaam</h5>
             <h6 class="person__title">CEO</h6>
             <img class="line-img" src="assets/img/line-small.svg" alt="" aria-hidden="true">
           </div>
@@ -158,7 +158,7 @@
           </div>
 
           <div class="person__name-title">
-            <h5 class="person__name">Antoine Roffler</h5>
+            <h5 class="person__name">Antoine&nbsp;Roffler</h5>
             <h6 class="person__title">CCO</h6>
           </div>
         </div>
@@ -321,7 +321,7 @@
 
       <h4>Parlons de votre site e-commerce.</h4>
 
-      <a href="#" class="cta">Contactez-nous</a>
+      <a class="cta" href="#contact" data-scroll>Contactez-nous</a>
     </div>
     <!-- ./section-why__bottom-block -->
   </section>

@@ -1,7 +1,7 @@
 .header {
   position: relative;
   height: 61vh;
-  min-height: 545px;
+  min-height: 480px;
   background: #000;
   color: white;
 
@@ -47,16 +47,22 @@
 }
 
 @media (min-width: 768px) {
-  h1 {
-    margin: 10% 0 0 18.75%;
-    font-size: 40px;
+  .header {
+    min-height: 545px;
+
+    h1 {
+      margin: 10% 0 0 18.75%;
+      font-size: 40px;
+    }
   }
 }
 
 @media (min-width: 1024px) {
-  h1 {
-    margin: 9% 0 0 21%;
-    font-size: 48px;
+  .header {
+    h1 {
+      margin: 9% 0 0 21%;
+      font-size: 48px;
+    }
   }
 }
 
@@ -68,10 +74,14 @@
   mix-blend-mode: difference;
   z-index: 2;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     position: fixed;
-    left: 10%;
+    left: 6.25%;
     top: 60px;
+  }
+
+  @media (min-width: 1280px) {
+    left: 10%;
   }
 }
 

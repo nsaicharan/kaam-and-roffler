@@ -1,7 +1,6 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
-const connect = require("gulp-connect-php");
-const browserSync = require("browser-sync");
+const browserSync = require("browser-sync").create();
 
 function reload(done) {
   browserSync.reload();
@@ -20,13 +19,15 @@ function css() {
 gulp.task("watch", () => {
   css();
 
-  connect.server({}, function() {
-    browserSync({ proxy: "127.0.0.1:8000" });
+  browserSync.init({
+    server: {
+      baseDir: "./"
+    }
   });
 
   gulp.watch("./assets/scss/**/*.scss", css);
 
-  gulp.watch(["./**/*.html", "./index.php", "./assets/js/**/*.js"], reload);
+  gulp.watch(["./**/*.html", "./assets/js/**/*.js"], reload);
 });
 
 exports.css = css;
