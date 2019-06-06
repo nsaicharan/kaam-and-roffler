@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  padding: 70px 15px 180px;
+  padding: 70px 10% 180px;
   background: #111;
 
   &__inner {
@@ -16,30 +16,30 @@
 
   &__title,
   &__content {
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 0.044em;
-    line-height: 1.4;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.047em;
   }
 
   &__title {
     color: white;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
 
   &__content {
     color: #818181;
+    line-height: 1.6;
     text-decoration: none;
   }
 
   &__logo {
     position: absolute;
-    bottom: 105px;
-    right: 11.4%;
+    bottom: 70px;
+    right: 15%;
   }
 
   @media (min-width: 768px) {
-    padding: 90px 15px 200px;
+    padding: 90px 30px 200px;
 
     &__inner {
       display: flex;
@@ -49,13 +49,13 @@
       margin: 0 auto;
     }
 
-    &__title,
-    &__content {
-      font-size: 20px;
+    &__title {
+      margin-bottom: 30px;
     }
 
-    &__title {
-      margin-bottom: 18px;
+    &__logo {
+      bottom: 105px;
+      right: 11.4%;
     }
   }
 }

@@ -17,9 +17,9 @@
   }
 
   .hashtags-wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 38px;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-bottom: 25px;
     background-size: cover;
 
     h3 {
@@ -46,6 +46,7 @@
       height: 136px;
       background: url("../img/hashtags.png");
       background-size: cover;
+      margin-bottom: 38px;
       padding-left: 8%;
       padding-right: 0;
 
@@ -92,11 +93,9 @@
 .persons-wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 75px 15px;
-}
+  padding: 50px 15px;
 
-@media (min-width: 768px) {
-  .persons-wrapper {
+  @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
@@ -155,12 +154,12 @@
 
   &__bottom-block {
     p {
+      padding: 0 calc(8% - 15px);
       color: #5b5b5b;
       font-size: 17px;
       font-weight: 700;
       line-height: 2.3;
       letter-spacing: -0.042em;
-      text-align: justify;
 
       strong {
         color: black;
@@ -195,6 +194,13 @@
 
     &--right &__pic {
       max-width: 190px;
+    }
+
+    &__bottom-block {
+      p {
+        padding: 0;
+        text-align: justify;
+      }
     }
 
     &--left &__bottom-block {
