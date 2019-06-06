@@ -3,6 +3,12 @@ $(document).ready(() => {
     $("body").toggleClass("burger-is-active");
   });
 
+  $(window).resize(() => {
+    if ($(this).width() > 1024) {
+      $("body").removeClass("burger-is-active");
+    }
+  });
+
   $("#mainMenu a").click(function() {
     $(this)
       .closest("ul")
@@ -18,26 +24,16 @@ $(document).ready(() => {
     }, 300);
   });
 
+  // Smooth Scroll Initialization
   smoothScroll.init();
 
-  appear({
-    elements: function elements() {
-      return $("[data-section]");
-    },
-    appear: function appear(el) {
-      const section = $(el).data("section");
-      // console.log({section});
+  // Scroll tracking
+  $.appear("[data-section]");
 
-      $("#mainMenu .active").removeClass("active");
-      $(`#mainMenu a[href*=${section}]`).addClass("active");
-    },
-    bounds: 100,
-    reappear: true
-  });
+  $("[data-section]").on("appear", function(e, $el) {
+    const section = $el.data("section");
 
-  $(window).resize(() => {
-    if ($(this).width() > 1024) {
-      $("body").removeClass("burger-is-active");
-    }
+    $("#mainMenu .active").removeClass("active");
+    $(`#mainMenu a[href*=${section}]`).addClass("active");
   });
 });
