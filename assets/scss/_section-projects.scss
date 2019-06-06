@@ -82,10 +82,9 @@
     }
   }
 
-  .project--3 {
-    .project-img {
-      filter: brightness(75%);
-    }
+  video,
+  .project-img {
+    filter: brightness(75%);
   }
 
   @media (min-width: 768px) {
