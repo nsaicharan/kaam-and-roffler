@@ -1,7 +1,6 @@
 .header {
   position: relative;
-  height: 61vh;
-  min-height: 480px;
+  height: 400px;
   background: #000;
   color: white;
 }
@@ -20,8 +19,8 @@
 }
 
 h1 {
-  margin: 10% auto 0;
-  font-size: 22px;
+  margin: 14% auto 0;
+  font-size: 24px;
   font-weight: 800;
   line-height: 1.35;
   letter-spacing: -0.042em;
@@ -39,8 +38,15 @@ h1 {
   opacity: 1;
 }
 
+@media (min-width: 360px) {
+  h1 {
+    font-size: 27.5px;
+  }
+}
+
 @media (min-width: 768px) {
   .header {
+    height: 61vh;
     min-height: 545px;
   }
 
@@ -62,7 +68,7 @@ h1 {
 .site-logo {
   position: absolute;
   left: 6.25%;
-  top: 45px;
+  top: 30px;
   mix-blend-mode: difference;
   z-index: 2;
 
@@ -132,7 +138,7 @@ h1 {
 .menu--mobile {
   position: absolute;
   left: 50%;
-  top: 56%;
+  top: 57.25%;
   transform: translate(-50%, -50%);
   opacity: 0;
   visibility: hidden;

@@ -40,7 +40,12 @@ $(document).ready(() => {
     const section = $el.data("section");
 
     $("#mainMenu .active").removeClass("active");
-    $(`#mainMenu a[href*=${section}]`).addClass("active");
+    
+    if (section == "contact") {
+      $("#mainMenu a").last().addClass("active");
+    } else {
+      $(`#mainMenu a[href*=${section}]`).addClass("active");
+    }
   });
 
   // Pause/Play Video

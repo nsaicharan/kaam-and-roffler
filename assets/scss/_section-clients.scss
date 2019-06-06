@@ -47,7 +47,13 @@
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
+    padding: 65px 4% 90px;
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
     .client-item img {
       max-width: 90px;
     }
