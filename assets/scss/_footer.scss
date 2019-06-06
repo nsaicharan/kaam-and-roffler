@@ -16,7 +16,7 @@
 
   &__title,
   &__content {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     letter-spacing: 0.044em;
     line-height: 1.4;
@@ -47,6 +47,11 @@
       justify-content: space-between;
       max-width: 970px;
       margin: 0 auto;
+    }
+
+    &__title,
+    &__content {
+      font-size: 20px;
     }
 
     &__title {
