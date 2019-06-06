@@ -4,7 +4,7 @@
 
   &__intro {
     max-width: 780px;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
     padding: 0 15px;
   }
 
@@ -12,7 +12,7 @@
     position: relative;
     margin-bottom: 30px;
     padding-left: 35%;
-    font-size: 15px;
+    font-size: 16px;
 
     &::before {
       content: url("../img/line.png");
@@ -38,7 +38,7 @@
     text-decoration: none;
 
     img {
-      margin-left: 8px;
+      margin-left: 7px;
     }
   }
 
@@ -54,17 +54,17 @@
   &__video-wrapper {
     position: relative;
     padding-left: 3.5%;
-    margin-bottom: 75px;
+    margin-bottom: 60px;
 
     // Grey element
     &::before {
       content: "";
       background: #f4f4f4;
       position: absolute;
-      width: 62.7%;
+      width: 52%;
       left: 0;
-      top: -18px;
-      bottom: -20px;
+      top: -30px;
+      bottom: -35px;
     }
 
     video {
@@ -79,8 +79,8 @@
 
     a {
       position: absolute;
-      right: 18px;
-      bottom: -50px;
+      right: 12px;
+      bottom: -36px;
     }
   }
 
@@ -123,10 +123,12 @@
     }
 
     &__video-wrapper {
+      margin-bottom: initial;
       padding-left: 5%;
 
       // Grey element
       &::before {
+        width: 62.7%;
         top: -40px;
         bottom: -45px;
       }
