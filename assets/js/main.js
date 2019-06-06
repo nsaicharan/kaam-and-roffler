@@ -1,4 +1,6 @@
 $(document).ready(() => {
+  $("body").addClass("page-loaded"); // Used for animating h1
+
   $("#burger-icon").click(function() {
     $("body").toggleClass("burger-is-active");
   });
@@ -27,7 +29,7 @@ $(document).ready(() => {
   // Smooth Scroll Initialization
   smoothScroll.init();
 
-  // Scroll tracking
+  // Scroll Tracking
   $.appear("[data-section]");
 
   $("[data-section]").on("appear", function(e, $el) {
