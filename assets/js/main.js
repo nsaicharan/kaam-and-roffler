@@ -12,12 +12,14 @@ $(document).ready(() => {
   });
 
   $("#mainMenu a").click(function() {
-    $(this)
-      .closest("ul")
-      .find(".active")
-      .removeClass("active");
+    setTimeout(() => {
+      $(this)
+        .closest("ul")
+        .find(".active")
+        .removeClass("active");
 
-    $(this).addClass("active");
+      $(this).addClass("active");
+    }, 300);
   });
 
   $("#mobileMenu a").click(() => {
