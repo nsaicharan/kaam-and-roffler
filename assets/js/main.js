@@ -18,7 +18,9 @@ $(document).ready(() => {
         .find(".active")
         .removeClass("active");
 
-      $(this).addClass("active");
+      if ($(this).attr('href').includes("#")) {
+        $(this).addClass("active");
+      }
     }, 300);
   });
 
@@ -39,5 +41,10 @@ $(document).ready(() => {
 
     $("#mainMenu .active").removeClass("active");
     $(`#mainMenu a[href*=${section}]`).addClass("active");
+  });
+
+  // Pause/Play Video
+  $("video").click(function() {
+    this.paused ? this.play() : this.pause();
   });
 });
