@@ -222,7 +222,7 @@
     }
 
     &--right &__pic {
-      max-width: 255px;
+      max-width: 250px;
     }
 
     &--left &__bottom-block {
@@ -242,6 +242,10 @@
     &--left &__pic {
       max-width: initial;
       padding: 0 5px 0 64px;
+
+      img {
+        width: 271px;
+      }
     }
 
     &--right &__pic {
