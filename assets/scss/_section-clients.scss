@@ -23,6 +23,8 @@
     width: 33.33%;
     margin-top: 6%;
 
+    &:last-child { margin-top: 8%; }
+
     img {
       display: block;
       margin: 0 auto;
