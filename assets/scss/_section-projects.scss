@@ -4,6 +4,10 @@
   padding: 65px 0 12px;
   overflow-x: hidden;
 
+  .background-line {
+    z-index: 1;
+  }
+
   h2 {
     margin-bottom: 60px;
   }
@@ -17,7 +21,8 @@
   .project-text-top {
     margin-bottom: 23px;
     text-align: center;
-    z-index: 1;
+    position: relative;
+    z-index: 2;
     // mix-blend-mode: difference;
   }
 
@@ -42,13 +47,14 @@
   }
 
   .project-text-bottom {
-    max-width: 400px;
     padding: 22px 8% 35px;
     background: #111;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.6;
     letter-spacing: 0.044em;
+    position: relative;
+    z-index: 2;
   }
 
   .project-line-number {
