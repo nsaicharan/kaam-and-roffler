@@ -25,11 +25,13 @@
   left: 0;
   pointer-events: none;
 
+  & + * { position: relative; }
+
   .line {
     position: absolute;
     height: 100%;
-    width: 1px;
-    background-color: rgba(151, 151, 151, 0.2);
+    width: 2px;
+    background-color: rgba(#979797, .1);
     top: 0;
 
     &.line-1 {
